@@ -23,9 +23,101 @@
             <p id="currentTime" class="lead"></p>
         </div>
     </header>
-    <div class="container">
+    <main class="container">
         <!-- Timeblocks go here -->
-    </div>
+        <table class="table" id="timeTable">
+            <thead class="thead-dark">
+                <tr class="tableHeader">
+                    <th scope="col" class="timeGrid">Time</th>
+                    <th scope="col" class="eventGrid">Event</th>
+                    <th scope="col" class="saveGrid">Save</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="schedBlock">
+                    <th class="timeGrid" data-value="0" scope="row">9:00 AM</th>
+                    <td>
+                        <textarea class="eventGrid" name="9AM" id="nineAMEvent" placeholder="Nothing scheduled, click to add event"></textarea>
+                    </td>
+                    <td class="noselect saveGrid saveBtn" type="button">
+                        <img src="/assets/images/save.png">
+                    </td>
+                </tr>
+                <tr class="schedBlock">
+                    <th class="timeGrid" data-value="1" scope="row">10:00 AM</th>
+                    <td>
+                        <textarea Name="10AM" id="10AM" placeholder="Nothing scheduled, click to add event"></textarea>
+                    </td>
+                    <td class="noselect saveBtn" type="button">
+                        <img src="/assets/images/save.png">
+                    </td>
+                </tr>
+                <tr class="schedBlock">
+                    <th class="timeGrid" data-value="2" scope="row">11:00 AM</th>
+                    <td>
+                        <textarea name="elevenAMEvent" id="elevenAMEvent" placeholder="Nothing scheduled, click to add event"></textarea>
+                    </td>
+                    <td class="noselect saveBtn" type="button">
+                        <img src="/assets/images/save.png">
+                    </td>
+                </tr>
+                <tr class="schedBlock">
+                    <th class="timeGrid" data-value="3" scope="row">12:00 PM</th>
+                    <td>
+                        <textarea name="twelveAMEvent" id="twelvePMEvent" placeholder="Nothing scheduled, click to add event"></textarea>
+                    </td>
+                    <td class="noselect saveBtn" type="button">
+                        <img src="/assets/images/save.png">
+                    </td>
+                </tr>
+                <tr class="schedBlock">
+                    <th class="timeGrid" data-value="4" scope="row">1:00 PM</th>
+                    <td>
+                        <textarea name="onePMEvent" id="onePMEvent" placeholder="Nothing scheduled, click to add event"></textarea>
+                    </td>
+                    <td class="noselect saveBtn" type="button">
+                        <img src="/assets/images/save.png">
+                    </td>
+                </tr>
+                <tr class="schedBlock">
+                    <th class="timeGrid" data-value="5" scope="row">2:00 PM</th>
+                    <td>
+                        <textarea name="twoPMEvent" id="twoPMEvent" placeholder="Nothing scheduled, click to add event"></textarea>
+                    </td>
+                    <td class="noselect saveBtn" type="button">
+                        <img src="/assets/images/save.png">
+                    </td>
+                </tr>
+                <tr class="schedBlock">
+                    <th class="timeGrid" data-value="6" scope="row">3:00 PM</th>
+                    <td>
+                        <textarea class="eventGrid" name="threePMEvent" id="threePMEvent" placeholder="Nothing scheduled, click to add event"></textarea>
+                    </td>
+                    <td class="noselect saveGrid saveBtn" type="button">
+                        <img src="/assets/images/save.png">
+                    </td>
+                </tr>
+                <tr class="schedBlock">
+                    <th class="timeGrid" data-value="7" scope="row">4:00 PM</th>
+                    <td>
+                        <textarea class="eventGrid" name="fourPMEvent" id="fourPMEvent" placeholder="Nothing scheduled, click to add event"></textarea>
+                    </td>
+                    <td class="noselect saveGrid saveBtn" type="button">
+                        <img src="/assets/images/save.png">
+                    </td>
+                </tr>
+                <tr class="schedBlock">
+                    <th class="timeGrid" data-value="8" scope="row">5:00 PM</th>
+                    <td>
+                        <textarea class="eventGrid" name="fivePMEvent" id="fivePMEvent" placeholder="Nothing scheduled, click to add event"></textarea>
+                    </td>
+                    <td class="noselect saveGrid saveBtn" type="button">
+                        <img src="/assets/images/save.png">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
