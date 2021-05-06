@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <header class="jumbotron myHeaderBG">
+    <header class=" noselect jumbotron myHeaderBG">
         <div class="frost">
             <h1 class="display-3"><span class="fLetters">W</span>ork <span class="fLetters">D</span>ay <span class="fLetters">S</span>cheduler</h1>
             <p class="lead">A simple calendar app for scheduling your work day</p>
@@ -26,7 +26,7 @@
     <main class="container">
         <!-- Timeblocks go here -->
         <table class="table" id="timeTable">
-            <thead class="thead-dark">
+            <thead class="thead-dark noselect">
                 <tr class="tableHeader">
                     <th scope="col" class="timeGrid">Time</th>
                     <th scope="col" class="eventGridHead">Event</th>
@@ -34,82 +34,82 @@
                 </tr>
             </thead>
             <tbody>
-                <tr class="schedBlock" data-value="9">
-                    <th class="timeGrid" data-value="9" scope="row">9:00 AM</th>
+                <tr data-value="9">
+                    <th class="noselect timeGrid" scope="row">9:00 AM</th>
                     <td>
-                        <textarea class="eventGrid" name="nineAM" id="event9input" placeholder="Nothing scheduled, click to add event"></textarea>
+                        <textarea class="eventGrid" id="event9input" placeholder="Nothing scheduled, click to add event"></textarea>
                     </td>
                     <td class="noselect saveGrid saveBtn" type="button">
                         <img src="/assets/images/save.png" alt="Vector drawing of a floppy disk, indicating save option"></img>
                     </td>
                 </tr>
-                <tr class="schedBlock" data-value="10">
-                    <th class="timeGrid" data-value="10" scope="row">10:00 AM</th>
+                <tr data-value="10">
+                    <th class="noselect timeGrid" scope="row">10:00 AM</th>
                     <td>
-                        <textarea name="tenAM" id="event10input" placeholder="Nothing scheduled, click to add event"></textarea>
+                        <textarea id="event10input" placeholder="Nothing scheduled, click to add event"></textarea>
                     </td>
                     <td class="noselect saveBtn" type="button">
                         <img src="/assets/images/save.png" alt="Vector drawing of a floppy disk, indicating save option"></img>
                     </td>
                 </tr>
-                <tr class="schedBlock" data-value="11">
-                    <th class="timeGrid" data-value="11" scope="row">11:00 AM</th>
+                <tr data-value="11">
+                    <th class="noselect timeGrid" scope="row">11:00 AM</th>
                     <td>
-                        <textarea name="elevenAM" id="event11input" placeholder="Nothing scheduled, click to add event"></textarea>
+                        <textarea id="event11input" placeholder="Nothing scheduled, click to add event"></textarea>
                     </td>
                     <td class="noselect saveBtn" type="button">
                         <img src="/assets/images/save.png" alt="Vector drawing of a floppy disk, indicating save option"></img>
                     </td>
                 </tr>
-                <tr class="schedBlock" data-value="12">
-                    <th class="timeGrid" data-value="12" scope="row">12:00 PM</th>
+                <tr data-value="12">
+                    <th class="noselect timeGrid" scope="row">12:00 PM</th>
                     <td>
-                        <textarea name="twelvePM" id="event12input" placeholder="Nothing scheduled, click to add event"></textarea>
+                        <textarea id="event12input" placeholder="Nothing scheduled, click to add event"></textarea>
                     </td>
                     <td class="noselect saveBtn" type="button">
                         <img src="/assets/images/save.png" alt="Vector drawing of a floppy disk, indicating save option"></img>
                     </td>
                 </tr>
-                <tr class="schedBlock" data-value="13">
-                    <th class="timeGrid" data-value="13" scope="row">1:00 PM</th>
+                <tr data-value="13">
+                    <th class="noselect timeGrid" scope="row">1:00 PM</th>
                     <td>
-                        <textarea name="onePM" id="event13input" placeholder="Nothing scheduled, click to add event"></textarea>
+                        <textarea id="event13input" placeholder="Nothing scheduled, click to add event"></textarea>
                     </td>
                     <td class="noselect saveBtn" type="button">
                         <img src="/assets/images/save.png" alt="Vector drawing of a floppy disk, indicating save option"></img>
                     </td>
                 </tr>
-                <tr class="schedBlock" data-value="14">
-                    <th class="timeGrid" data-value="14" scope="row">2:00 PM</th>
+                <tr data-value="14">
+                    <th class="noselect timeGrid" scope="row">2:00 PM</th>
                     <td>
-                        <textarea name="twoPM" id="event14input" placeholder="Nothing scheduled, click to add event"></textarea>
+                        <textarea id="event14input" placeholder="Nothing scheduled, click to add event"></textarea>
                     </td>
                     <td class="noselect saveBtn" type="button">
                         <img src="/assets/images/save.png" alt="Vector drawing of a floppy disk, indicating save option"></img>
                     </td>
                 </tr>
-                <tr class="schedBlock" data-value="15">
-                    <th class="timeGrid" data-value="15" scope="row">3:00 PM</th>
+                <tr data-value="15">
+                    <th class="noselect timeGrid" scope="row">3:00 PM</th>
                     <td>
-                        <textarea class="eventGrid" name="threePM" id="event15input" placeholder="Nothing scheduled, click to add event"></textarea>
+                        <textarea class="eventGrid" id="event15input" placeholder="Nothing scheduled, click to add event"></textarea>
                     </td>
                     <td class="noselect saveGrid saveBtn" type="button">
                         <img src="/assets/images/save.png" alt="Vector drawing of a floppy disk, indicating save option"></img>
                     </td>
                 </tr>
-                <tr class="schedBlock" data-value="16">
-                    <th class="timeGrid" data-value="16" scope="row">4:00 PM</th>
+                <tr data-value="16">
+                    <th class="noselect timeGrid" scope="row">4:00 PM</th>
                     <td>
-                        <textarea class="eventGrid" name="fourPM" id="event16input" placeholder="Nothing scheduled, click to add event"></textarea>
+                        <textarea class="eventGrid" id="event16input" placeholder="Nothing scheduled, click to add event"></textarea>
                     </td>
                     <td class="noselect saveGrid saveBtn" type="button">
                         <img src="/assets/images/save.png" alt="Vector drawing of a floppy disk, indicating save option"></img>
                     </td>
                 </tr>
-                <tr class="schedBlock" data-value="17">
-                    <th class="timeGrid" data-value="17" scope="row">5:00 PM</th>
+                <tr data-value="17">
+                    <th class="noselect timeGrid" scope="row">5:00 PM</th>
                     <td>
-                        <textarea class="eventGrid" name="fivePM" id="event17input" placeholder="Nothing scheduled, click to add event"></textarea>
+                        <textarea class="eventGrid" id="event17input" placeholder="Nothing scheduled, click to add event"></textarea>
                     </td>
                     <td class="noselect saveGrid saveBtn" type="button">
                         <img src="/assets/images/save.png" alt="Vector drawing of a floppy disk, indicating save option"></img>
