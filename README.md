@@ -33,7 +33,11 @@ A simple calendar application that allows a user to save events for each hour of
 
 Usage is relatively intuitive. 
 
-1. Simply click on the appropriate cell in the event column 
+1. Simply click on the appropriate cell in the event column.
 2. Type your event note.
 3. Click Save.
 4. That's it! You'll notes will still be there when you come back.
+
+## Works Cited
+
+<a href="https://fonts.google.com">Google Fonts</a>
