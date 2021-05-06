@@ -16,7 +16,7 @@ tableData.shift();
 
 //Create function to check if the block is in the past,present of future
 var stateCheck = function() {
-    for (i = 0; i < tableData.length; i++) {
+    for (var i = 0; i < tableData.length; i++) {
         $("tbody tr").each(function() {
             if (currentHour > $(this).data('value')) {
                 $(this).addClass('past');
@@ -56,11 +56,17 @@ var savedNotes = []
 function getEventText() {
     var eventText = $(this).prev().children('textarea').val();
     var eventID = $(this).prev().children('textarea').attr('id');
-    console.log('ID=', eventID);
-    console.log('eventText=', eventText);
-
-
+    localStorage.setItem('Event Note ' + eventID, eventText);
 
 }
 
 $('.saveBtn').on('click', getEventText);
+//Restore Events form localStorage
+$(function() {
+    for (var i = 9; i < 18; i++) {
+        var eventReturn = 'Event Note event' + i + 'input'
+        var eventSelector = '#event' + i + 'input'
+        var setEventText = localStorage.getItem(eventReturn);
+        $(eventSelector).text(setEventText);
+    };
+})
